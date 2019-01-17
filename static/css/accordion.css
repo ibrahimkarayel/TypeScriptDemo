@@ -1,0 +1,24 @@
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.pad-top {
+    padding-top: 40px;
+}
+
+.panel-title-adjust {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.panel-title-adjust a:hover {
+    text-decoration: none;
+}
+
+.panel-title-adjust i {
+    padding-right: 5px;
+}

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TypeScript Demo">
+    <meta name="author" content="ibrahim KARAYEL">
+    <title>Getting Started with TypeScript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="../static/css/scrolling-nav.css" rel="stylesheet">
+    <link href="../static/css/accordion.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">TypeScript</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Agenda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#play">Play with Code</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#devtools">Devtools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div id="accordion" role="tablist">
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading1">
+                            <h5 class="mb-0">
+                                <a data-toggle="collapse" href="#collapse1" aria-expanded="true"
+                                   aria-controls="collapse1">
+                                    Introduction
+                                </a>
+                            </h5>
+                        </div>
+
+                        <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-8 mx-auto">
+                                            <div class="list-group-flush">
+                                                <li class="list-group-item">History of JavaScript</li>
+                                                <li class="list-group-item">JavaScript & ECMAScript</li>
+                                                <li class="list-group-item">Problems</li>
+                                                <li class="list-group-item">TypeScript</li>
+                                                <li class="list-group-item">Compiling vs Transpiling</li>
+                                                <li class="list-group-item">Summary</li>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading2">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false"
+                                   aria-controls="collapse2">
+                                    Setting up Your Environment
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item">Install Node.js and NPM</li>
+                                <li class="list-group-item">Install TypeScript</li>
+                                <li class="list-group-item">Install your favorite IDEA</li>
+                                <li class="list-group-item">Summary</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading3">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false"
+                                   aria-controls="collapse3">
+                                    Using TypeScript
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item">Introduction</li>
+                                <li class="list-group-item">Create a project and Introduce TypeScript</li>
+                                <li class="list-group-item">Define Compiler Options</li>
+                                <li class="list-group-item">tsconfig.json-file</li>
+                                <li class="list-group-item">Debug TypeScript Code</li>
+                                <li class="list-group-item">Summary</li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading4">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse4" aria-expanded="false"
+                                   aria-controls="collapse4">
+                                    Basic Types
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item">Introduction</li>
+                                <li class="list-group-item">Boolean, Number, String</li>
+                                <li class="list-group-item">Array, Tuple</li>
+                                <li class="list-group-item">Enum</li>
+                                <li class="list-group-item">Any, Void, Null and Undefined, Never</li>
+                                <li class="list-group-item">Object</li>
+                                <li class="list-group-item">Type assertions</li>
+                                <li class="list-group-item">Summary</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading5">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse5" aria-expanded="false"
+                                   aria-controls="collapse5">
+                                    Variable Declarations
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item"> Introduction</li>
+                                <li class="list-group-item"> Declare Variables (Var, Let and Const )</li>
+                                <li class="list-group-item"> Function-scoped vs. Block-scoped</li>
+                                <li class="list-group-item"> Multiple Declarations</li>
+                                <li class="list-group-item"> Declare Before Access</li>
+                                <li class="list-group-item"> Using Const</li>
+                                <li class="list-group-item"> Summary</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading6">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse6" aria-expanded="false"
+                                   aria-controls="collapse6">
+                                    Futures </a>
+                            </h5>
+                        </div>
+                        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item"> Introduction</li>
+                                <li class="list-group-item"> Template Strings & String Interpolation</li>
+                                <li class="list-group-item"> Literal Types(String, Boolean, Number)</li>
+                                <li class="list-group-item"> for...of</li>
+                                <li class="list-group-item"> Rest Parameters</li>
+                                <li class="list-group-item"> Destructuring</li>
+                                <li class="list-group-item"> Spread Operator</li>
+                                <li class="list-group-item"> Arrow Functions (fat | lambda function)</li>
+                                <li class="list-group-item"> Summary</li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading7">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="false"
+                                   aria-controls="collapse7">
+                                    OOP(interfaces and classes)
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item"> Introduction</li>
+                                <li class="list-group-item"> Classes and Interfaces</li>
+                                <li class="list-group-item"> Implement an Interface</li>
+                                <li class="list-group-item"> Type Compatibility in TypeScript</li>
+                                <li class="list-group-item"> Access Modifiers</li>
+                                <li class="list-group-item"> Parameter Properties</li>
+                                <li class="list-group-item"> Readonly Properties</li>
+                                <li class="list-group-item"> Accessors & Static Properties</li>
+                                <li class="list-group-item"> Inheritance & Abstract Classes</li>
+                                <li class="list-group-item"> Constructor & instanceof Operator</li>
+                                <li class="list-group-item"> Destructuring Objects</li>
+                                <li class="list-group-item"> Summary</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading8">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse8" aria-expanded="false"
+                                   aria-controls="collapse8">
+                                    Generics
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item"> Introduction</li>
+                                <li class="list-group-item"> Generic Array & Function</li>
+                                <li class="list-group-item"> Generic interface & class</li>
+                                <li class="list-group-item"> Generic Constraint</li>
+                                <li class="list-group-item"> Summary</li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading9">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse9" aria-expanded="false"
+                                   aria-controls="collapse9">
+                                    Functions
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item"> Introduction</li>
+                                <li class="list-group-item"> Types of Functions in JavaScript</li>
+                                <li class="list-group-item"> Adding Types to Functions</li>
+                                <li class="list-group-item"> Optional Parameter & Default Value</li>
+                                <li class="list-group-item"> Rest Parameters</li>
+                                <li class="list-group-item"> Functions as parameters</li>
+                                <li class="list-group-item"> Interfaces for Functions</li>
+                                <li class="list-group-item"> This and Arrow in Functions</li>
+                                <li class="list-group-item"> Async and Await</li>
+                                <li class="list-group-item"> Summary</li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading10">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse10" aria-expanded="false"
+                                   aria-controls="collapse10">
+                                    Modules
+                                </a>
+                            </h5>
+                        </div>
+                        <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading10"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <li class="list-group-item"> Introduction</li>
+                                <li class="list-group-item"> Module Basics</li>
+                                <li class="list-group-item"> Export and Import</li>
+                                <li class="list-group-item"> Export & Import Multiple Types</li>
+                                <li class="list-group-item"> Export & Import Aliases</li>
+                                <li class="list-group-item"> Default Export</li>
+                                <li class="list-group-item"> Export Variables and Functions</li>
+                                <li class="list-group-item"> Setting Up Module Loader</li>
+                                <li class="list-group-item"> Summary</li>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading11">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse11" aria-expanded="false"
+                                   aria-controls="collapse11">Decorators</a>
+                            </h5>
+                        </div>
+                        <div id="collapse11" class="collapse" role="tabpanel" aria-labelledby="heading11"
+                             data-parent="#accordion">
+                            <div class="card-body">
+
+                                <li class="list-group-item"> Introduction</li>
+                                <li class="list-group-item"> Decorator Basics</li>
+                                <li class="list-group-item"> Turn on Decorator Support</li>
+                                <li class="list-group-item"> Create a Property Decorator</li>
+                                <li class="list-group-item"> Create a Class Decorator</li>
+                                <li class="list-group-item"> Use the Reflect-metadata Library</li>
+                                <li class="list-group-item"> Component Decorator in Angular</li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" role="tab" id="heading12">
+                            <h5 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" href="#collapse12" aria-expanded="false"
+                                   aria-controls="collapse12"> Wrap Up </a>
+                            </h5>
+                        </div>
+                        <div id="collapse12" class="collapse" role="tabpanel" aria-labelledby="heading12"
+                             data-parent="#accordion">
+                            <div class="card-body">Thanks
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="play">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+                <p> Open terminal or bash
+                <pre><code>  <b>cd  ModuleName(03_usingTypeScript)  tcs -w</b></code></pre>
+                </p>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="devtools" class="bg-light">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2> Opening Devtools </h2>
+                <p> To access the DevTools, on any web page or app in Google Chrome you can use one of these
+                    options: </p>
+                <ul>
+                    <li> Open the <b>Chrome menu </b> <img src="../static/img/toolsmenu.png" alt="Chrome menu"> at the
+                        top-right of your browser window, then select <b>Tools</b> &gt; <b>Developer Tools</b>.
+                    </li>
+                    <li> Right-click on any page element and select <b>Inspect Element</b>.</li>
+                </ul>
+                <table class="table">
+                    <tbody>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"> Windows / Linux</th>
+                        <th scope="col"> Mac</th>
+                    </tr>
+                    <tr>
+                        <td> Open Developer Tools</td>
+                        <td><span class="kbd">F12</span>,<span class="kbd">Ctrl</span> + <span class="kbd">Shift</span>+<span
+                                class="kbd">I</span></td>
+                        <td><span class="kbd">Cmd</span> + <span class="kbd">Opt</span> + <span class="kbd">I</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Open / switch from inspect element mode and browser window</td>
+                        <td><span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">C</span>
+                        </td>
+                        <td><span class="kbd">Cmd</span> + <span class="kbd">Shift</span> + <span class="kbd">C</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Open Developer Tools and bring focus to the console</td>
+                        <td><span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">J</span>
+                        </td>
+                        <td><span class="kbd">Cmd</span> + <span class="kbd">Opt</span> + <span class="kbd">J</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Inspect the Inspector (<em>undock first one and press</em>)</td>
+                        <td><span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">J</span>
+                        </td>
+                        <td><span class="kbd">Cmd</span> + <span class="kbd">Opt</span> + <span class="kbd">J</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <p> To open up the General Settings dialog type <span class="kbd">?</span> or <span
+                        class="kbd">F1</span> when the
+                    Developer Tools window is open. Press <span class="kbd">Esc</span> to close the settings dialog.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>Contact</h2>
+                <b>Email to</b> <a href="mailto:ibrahmkarayel@gmail.com"> ibrahim KARAYEL</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; JOWL 2019</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
